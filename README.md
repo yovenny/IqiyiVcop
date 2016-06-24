@@ -1,8 +1,8 @@
-## 此为爱奇艺视频托管androidsdk源码.(拷贝自libiqiyiandroidvcopsdk.jar)
+### 此为爱奇艺视频托管androidsdk源码.(拷贝自libiqiyiandroidvcopsdk.jar)
 
 **修复部分问题.
 - 去除httpClient,更改为httpUrlConnection.
-- 更改RandomAccessFile ~~rwd~~ 为 r 只读
+- 更改RandomAccessFile ~~rwd~~ 为 r 只读(android >4.4,存在外置存储卡没有写的权限)
 - 更改threadCount为2,trackError判读错误的情况.
 
 

@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/Authorizebutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="一般开发者授权" />
+
+    <Button
+        android:id="@+id/BtnAuthorBaidu"
+        android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Authorizebutton"
+        android:text="合作方授权" />
+    
+  <Button
+        android:id="@+id/BtnEnterprise"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BtnAuthorBaidu"
+        android:text="企业授权" />
+
+    <Button
+        android:id="@+id/UploadButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/BtnEnterprise"
+        android:text="上传视频" />
+
+    
+        <Button
+        android:id="@+id/BtnBrowse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/UploadButton"
+        android:layout_below="@+id/UploadButton"
+        android:text="所有视频管理" />
+
+       <!--  <Button
+            android:id="@+id/BtnVirtualUrlToRealUrl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/BtnBrowse"
+            android:text="虚拟地址转真实播放地址" /> -->
+        <Button
+            android:id="@+id/BtnRefreshToken"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/BtnBrowse"
+            android:text="Refresh Token" />
+        
+        <Button
+            android:id="@+id/BtnSDKVersion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/BtnRefreshToken"
+            android:text="SDK 版本信息" />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iqiyi.sdk.android.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+    
+     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data android:name="APPKEY" android:value="8aaaeae9766a4c8da4fefdd193e8cd0b"></meta-data>
+        <meta-data android:name="APPSECRET" android:value="a18b53afec981b2abe7e5afda65ba388"></meta-data>
+       <meta-data android:name="managerUrl" android:value="http://openapi.iqiyi.com"></meta-data>
+       <meta-data android:name="uploadUrl" android:value="http://qichuan.iqiyi.com"></meta-data>
+        <activity
+            android:name="com.iqiyi.sdk.android.demo.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="VideoListActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="UploadListActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="VideoListConfigActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="PlaybackActivity" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

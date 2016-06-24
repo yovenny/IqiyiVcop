@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/VideoNameTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text="视频名字" />
+
+    <TextView
+        android:id="@+id/fildIdTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="视频ID" />
+
+    <TextView
+        android:id="@+id/VideoStateTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="视频状态" />
+
+    <TextView
+        android:id="@+id/VideoUrlTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="视频URL地址" />
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+    <Button
+       android:id="@+id/BtnListDel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="删除视频" />
+
+       <Button
+           android:id="@+id/BtnPlayUrl"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_toRightOf="@id/BtnListDel"
+           android:text="获取播放地址" />
+       <Button
+           android:id="@+id/BtnInfo"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/BtnPlayUrl"
+           android:text="视频信息"/>
+       <Button
+           android:id="@+id/btn_v2r"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/BtnInfo"
+           android:text="V转R"/>
+       <Button
+           android:id="@+id/btn_state"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/BtnListDel"
+           android:layout_alignLeft="@id/BtnListDel"
+           android:text="视频状态"/>
+       
+       <Button
+           android:id="@+id/btn_palyback"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/btn_state"
+           android:layout_alignTop="@id/btn_state"
+           android:text="播放"/>
+       
+       <CheckBox 
+           android:id="@+id/delete_check_box"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/btn_palyback"
+           android:layout_alignTop="@id/btn_palyback"
+           android:text="是否选中"/>
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

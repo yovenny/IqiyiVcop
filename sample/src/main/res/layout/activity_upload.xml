@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/BtnUpload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="上传视频" />
+
+    <Button
+        android:id="@+id/BtnBrowseUpload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="浏览当前上传的视频" />
+
+    <TextView
+        android:id="@+id/TextViewList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="上传的视频列表" />
+
+    <ListView
+        android:id="@+id/UploadListView"
+        android:layout_width="fill_parent"
+        android:divider="@android:color/black"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
